@@ -1,0 +1,44 @@
+### GUI program
+1) create basic GUI for start screen
+    - have widgets for start game, quit. 
+        - when start game is selected, need to create a new window. 
+            create TopLevel for this. I.e when button clicked command= new_window function (using Toplevel)
+        - could have a simple chess puzzle in a mini chess game titled "start" and one titled "quit" (do this later if at all)
+
+2) Create the chessboard on the new window. For now white always at the bottom black always at the top.
+    - need to create an 8x8 grid with some sort of theme. cant just by black/white or something.
+    - need to get images for chess pieces?
+    - need to put chess images in the right starting positions.
+    - need labels on grid? i.e A1,A2 etc
+    - interface to the side of the board for the purpose of tracking pieces lost
+    - quit/restart button
+
+
+
+### pieces program
+
+1) define the pieces
+    - piece name,
+    - current location on the board (not sure where this is stored, does this need to be kept on the GUI side, do we make a call to pieces.location after every move? IDK yet.)
+        - when a piece moves, delete old location, update with new location. (should this be in logic?....)
+    - colour
+    - how they can move?
+        - all in a dictonary?
+    
+
+
+### logic program
+
+1) define how the pieces can move
+
+2) using information stored in pieces, check which moves are possible, i.e what squeres it can move to.
+    - check how they can move
+    - of those coords it can move to, which are available? is it a reall cord? is there another pieces current location in the way? is it a legal move for that piece?
+  
+
+
+
+
+
+
+### main program
